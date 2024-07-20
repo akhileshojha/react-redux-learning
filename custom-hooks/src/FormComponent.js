@@ -1,15 +1,15 @@
+// FormComponent.js
 import React from "react";
-import { useForm } from "./useForm";
+import useForm from "./useForm";
 
 const FormComponent = () => {
-  const [values, handleChange] = useForm({
-    username: "",
-    email: "",
-  });
+  const [values, handleChange] = useForm({ username: "", email: "" });
+
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(values);
   };
+
   return (
     <form onSubmit={handleSubmit}>
       <input
