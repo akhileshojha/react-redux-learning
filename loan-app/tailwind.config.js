@@ -5,7 +5,11 @@ module.exports = {
     "./public/index.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        customDark: '#1a1a2e', // Add your custom dark color here
+      },
+    },
   },
   plugins: [],
 }
